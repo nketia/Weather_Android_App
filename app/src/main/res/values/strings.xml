@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Weather_Assignment2</string>
+    <string name="main_enter_city_name">Enter City Name</string>
+    <string name="main_get_weather">Get Weather</string>
+    <string name="main_humity">Humidity</string>
+    <string name="main_clouds">Clouds</string>
+</resources>

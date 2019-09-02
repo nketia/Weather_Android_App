@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/lblCityName"
+        android:layout_width="wrap_content"
+        android:labelFor="@id/entCityName"
+        android:textColor="@color/colorBlack"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10sp"
+        android:text="@string/main_enter_city_name"/>
+
+
+    <EditText
+        android:id="@+id/entCityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="City Name eg. Halifax"
+        android:maxLines="1"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lblCityName"/>
+
+    <Button
+        android:id="@+id/getWeather"
+        android:layout_width="150dp"
+        android:layout_height="40sp"
+        android:layout_below="@id/entCityName"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:text="@string/main_get_weather" />
+
+
+
+    <TextView
+        android:id="@+id/providedCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_below="@id/getWeather"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cityTemp"
+            android:layout_below="@id/providedCity"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/cityTemp"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/colorBlack"
+    android:layout_marginTop="10dp"
+    android:id="@+id/min_maxTemp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/min_maxTemp"
+        android:textColor="@color/colorBlack"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/cityAtmosphere"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityAtmosphere"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/cityAtmosphereDescription"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_below="@id/cityAtmosphereDescription"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/cityHumidity"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@id/cityAtmosphereDescription"
+        android:id="@+id/cityCloudCoverage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityHumidity"
+        android:text="@string/main_humity"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/colorBlack"
+        android:labelFor="@id/cityHumidity"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/lblHumidity"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:labelFor="@id/cityCloudCoverage"
+        android:textColor="@color/colorBlack"
+        android:layout_marginRight="40dp"
+        android:text="@string/main_clouds"
+        android:layout_below="@id/cityCloudCoverage"
+        android:id="@+id/lblClouds"/>
+
+
+</RelativeLayout>
